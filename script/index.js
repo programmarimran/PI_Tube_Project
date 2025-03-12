@@ -19,19 +19,25 @@ const displayCatagory =(categories)=>{
     for(let cat of categories){
         // console.log(cat)
         const catagoryDiv =document.createElement("div")
-        catagoryDiv.classList.add("btn-catagory")
+        
         catagoryDiv.innerHTML=`
-        <button class="btn btn-sm">${cat.category}</button>
+        <button class="btn btn-sm btn-catagory">${cat.category}</button>
         `
         catagoryContainer.appendChild(catagoryDiv)
     }
 
-        const btnCatagory=document.getElementsByClassName("btn-catagory")
-    console.log(btnCatagory)
-    
-    
+    const btnCatagory=document.getElementsByClassName("btn-catagory")   
     for(let btn of btnCatagory){
-        console.log(btn,"hello")
+        
+        
+        btn.addEventListener("click",(event)=>{
+            for(let btn2 of btnCatagory){
+
+                btn2.classList.remove("hoverStyle")
+            }
+
+            event.currentTarget.classList.add("hoverStyle")
+        })
     }
 
 }
