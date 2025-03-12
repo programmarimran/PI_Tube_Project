@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PI Tube</title>
+
+    <!-- daisy UI connect -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <header class="w-11/12 mx-auto">
+        <nav class="flex justify-between py-5 border-b-2 border-[#17171720]">
+            <div>
+                <img title="programmar international" src="./assets/Group 26.png" alt="">
+            </div>
+            <div class="btn">Short viewport</div>
+            <div class="btn bg-[#FF1F3D] text-white">Blog</div>
+        </nav>
+        <!-- dynamic nav -->
+         <nav id="catagory-container" class="flex justify-center items-center gap-5 py-5">
+            <div class="btn-catagory">
+
+                <button class="btn btn-sm">All</button>
+               
+            </div>
+         </nav>
+         
+    </header>
+    <!-- main section is start -->
+    <main class="w-11/12 mx-auto">
+        <section id="content-container" class="">
+            <div class="card bg-base-100 w-96 shadow-sm">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                    alt="Shoes"
+                    class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Card Title</h2>
+                  <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                  <div class="card-actions">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+        </section>
+    </main>
+    <script src="./script/index.js"></script>
+</body>
+</html>
